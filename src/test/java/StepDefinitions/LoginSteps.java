@@ -13,7 +13,7 @@ public class LoginSteps {
 	}
 
 	@When("user enters valid username and password")
-	public void user_enters_valid_username_and_password() {
+	public void user_enters_valid_uname_and_password() {
 		System.out.println("user enters valid username and password");
 	}
 
