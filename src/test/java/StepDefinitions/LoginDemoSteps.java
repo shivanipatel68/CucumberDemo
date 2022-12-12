@@ -24,12 +24,12 @@ public class LoginDemoSteps {
 		driver.navigate().to("https://example.testproject.io/web/");
 	}
 
-	@When("user inputs valid username and password")
-	public void user_inputs_valid_username_and_password() throws InterruptedException {
+	@When("^user inputs valid (.*) and (.*)$")
+	public void user_inputs_valid_username_and_password(String username, String password) throws InterruptedException {
 		System.out.println("Inside Step - user enters a text in search box");
 
-		driver.findElement(By.id("name")).sendKeys("Test");
-		driver.findElement(By.id("password")).sendKeys("12345");
+		driver.findElement(By.id("name")).sendKeys(username);
+		driver.findElement(By.id("password")).sendKeys(password);
 
 		Thread.sleep(2000);
 	}
