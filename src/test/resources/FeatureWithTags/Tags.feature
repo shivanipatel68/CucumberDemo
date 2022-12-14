@@ -1,8 +1,8 @@
-Feature: Feature to demo tags
+Feature: Check Home Page Functionality
 
   @smoke
-  Scenario: Sample1
-    Given user is on login page
+  Scenario: Check Logout link
+    Given user is logged In
     When user enters valid username and password
     And clicks on login button
     Then user is navigated to the home page
